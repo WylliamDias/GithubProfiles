@@ -1,0 +1,123 @@
+.profile-container {
+  width: min(100%, 800px);
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #bbbbbb61;
+  border-radius: 25px;
+}
+
+.profile-container section.profile-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px 10px 25px;
+  background-color: #8c57b0;
+  border-radius: 25px 25px 0 0;
+}
+
+.profile-container section.profile-info img {
+  width: min(8vw , 55px);
+  height: min(8vw , 55px);
+  border-radius: 50%;
+}
+
+.profile-container section.profile-info h3 {
+  color: white;
+  font-size: min(5vw, 20pt);
+}
+
+.profile-container section.profile-data {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  border: solid 2px #8c57b0;
+  border-radius: 0 0 25px 25px;
+  flex-wrap: wrap;
+}
+
+.profile-container section.profile-data article.profile-count {
+  padding: 5px;
+  color: white;
+  font-size: 14pt;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  border-right: 2px solid #8c57b0;
+  flex-basis: 400px;
+}
+
+section.profile-data article.profile-count > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background-color: #553560;
+  width: 100%;
+  margin: 15px;
+  border-radius: 25px;
+  align-items: center;
+  padding: min(30px, 3vw);
+  flex-basis: 50%;
+  max-width: 450px;
+  font-size: min(14pt, 3vw);
+}
+
+.profile-container section.profile-data article.profile-repositories {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 280px;
+}
+
+section.profile-data article.profile-repositories ul {
+  flex: 1;
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+article.profile-repositories ul li {
+  background-color: #1e609a;
+  color: white;
+  font-size: min(12pt, 3vw);
+  font-weight: bold;
+  min-height: min(9vw, 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+  border-radius: 15px;
+  max-width: 450px;
+}
+
+@media (max-width: 820px) {
+  .profile-container section.profile-data article.profile-count {
+    border-right: none;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
